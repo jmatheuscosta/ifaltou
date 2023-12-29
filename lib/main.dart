@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           const SizedBox(width: 30),
           IconButton(
-            icon: Text("Salas Abertas", style: TextStyle(color: const Color.fromARGB(255, 0, 0,0), fontSize: 25)),
+            icon: const Text("Salas Abertas", style: TextStyle(color: Color.fromARGB(255, 0, 0,0), fontSize: 25)),
             //icon: const Icon(Icons.door_back_door_outlined ),
             tooltip: 'Salas Abertas',
             iconSize: 40,
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           const SizedBox(width: 30),
           IconButton(
-            icon: Text("Perfil", style: TextStyle(color: const Color.fromARGB(255, 0, 0,0), fontSize: 25)),
+            icon: const Text("Perfil", style: TextStyle(color: Color.fromARGB(255, 0, 0,0), fontSize: 25)),
             //icon: const Icon(Icons.account_circle_outlined),
             tooltip: 'Perfil',
             iconSize: 40,
@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   tooltip: 'Login',
                   //icon: const Icon(Icons.login),                
                   color: const Color.fromARGB(255,255,255,255),
-                  icon: Text("Login", style: TextStyle(color: const Color.fromARGB(255,255,255,255), fontSize: 25)),
+                  icon: const Text("Login", style: TextStyle(color: Color.fromARGB(255,255,255,255), fontSize: 25)),
                   onPressed: () {},
                 ),
               ),
