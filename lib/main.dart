@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ifaltou/src/views/login_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -72,7 +73,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   //icon: const Icon(Icons.login),                
                   color: const Color.fromARGB(255,255,255,255),
                   icon: const Text("Login", style: TextStyle(color: Color.fromARGB(255,255,255,255), fontSize: 25)),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LoginPage(),
+                        settings: const RouteSettings(name: '/login'),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
@@ -98,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 700, // Largura da imagem
                   height: 600,
                   padding: const EdgeInsets.only(right: 100),
-                  child: Image.asset('assets/images/logo.png'),
+                  child: Image.asset('assets/images/ifaltou_logo.png'),
                 ),
               ],
             ),
